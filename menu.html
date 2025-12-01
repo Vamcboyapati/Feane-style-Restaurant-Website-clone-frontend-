@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Inconsolata&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="./all.css">
+  <title>Menu</title>
+  <style>
+    .home-bg{
+      background: url('./hero-bg.jpg');
+      background-repeat:no-repeat;
+      /* background-position: center; */
+      background-size: cover;
+      min-height: 10vh;
+      width: 100%;
+      position: relative;
+    }
+    
+.our-menu{
+      /* margin: 0px auto; */
+      /* width: 100%; */
+      display: flex;
+      /* flex-shrink: 0; */
+      flex-wrap: wrap;
+      /* background-color: #ffc107; */
+      margin-right:  -15px;
+      margin-left: -15px;
+       position: relative;
+       /* height: 1330.5px; */
+      /* column-gap: 20px; */
+    }
+    .box{
+      border-radius: 18px ;
+      margin-top: 25px;
+      background: linear-gradient(to bottom, #f1f2f3 25px, #222831 25px);
+      overflow: hidden;
+      border: none;
+      color: #ffffff;
+    }
+    .box:hover img{
+      transform: scale(1.1);
+    }
+    .img-box>img{
+      transition: transform 0.3s ease;
+    }
+    .element{
+      /* max-width: 33.333333%; */
+      padding: 0px 15px;
+      flex: 0 0 33.333333%;
+      /* flex: 1 0 33.333333%; */
+      /* border-radius: 15px; */
+      
+      
+    }
+    .img-box{
+      /* max-width: 33.33%; */
+      display: flex;
+      height:215px;
+      padding: 25px;
+      background-color: #f1f2f3 ;
+      border-radius: 0px 0px 0px 45px;
+      justify-content: center;
+      align-items: center;
+      margin: -1px;
+    }
+    .menu-details img{
+      max-width: 100%;
+      object-fit: contain;
+      max-height: 145px;
+    }
+    .txt{
+      padding: 25px;
+      color: white;
+      
+    }
+    .txt>h5{
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    .txt>p{
+      line-height: 1.5;
+    }
+    .menu{
+      padding: 20px 0px;
+    }
+    .options{
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+      font-size: 20px;
+      align-items: center;
+    }
+    .options>h5{
+      font-weight: normal;
+    }
+    .options>.bi{
+      background-color: #ffc107;
+      color: white;
+      padding: 8px 10px;
+      border-radius: 20px;
+    }
+    .more-items{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin: 48px 0px;
+    }
+    .more-items>button{
+      padding: 10px 60px;
+      background-color: #ffc107;
+      color: white;
+      font-size: 18px;
+      border: none;
+      border-radius: 20px;
+    }
+   .more-items>button>a{
+    text-decoration: none;
+    color: white;
+   }
+    
+
+  @media (max-width:850px) {
+    .nav-sec{
+      display: none;
+    }
+    .end-sec{
+      display: none;
+    }
+  }
+  @media (max-width: 993px) {
+    .home-header,.scroll-sec{
+      padding: 20px 48px 0px;
+    }
+    
+  }
+  @media (min-width:850px){
+    .hams{
+      display: none;
+    }
+  }
+  @media (max-width:1047px) {
+   .element{
+    flex:0 0 50%;
+   }
+   .our-menu{
+    padding: 0px 70px;
+   }
+  }
+  @media (max-width:600px) {
+    .element{
+      flex:0 0 100%
+    }
+    .our-menu{
+    padding: 0px 30px;
+   }
+  }
+  
+  
+  </style>
+</head>
+<body>
+  <section>
+<div class="home-bg">
+    <div class="home-header ">
+      <h1>Feane</h1>
+      <div class="nav-sec">
+        <a href="./home.html">HOME</a>
+        <a href="#">MENU</a>
+        <a href="./about.html">ABOUT</a>
+        <a href="#">BOOK TABLE</a>
+      </div>
+      <div class="end-sec">
+        <a href=""><i class="bi bi-person-fill"></i></a>
+        <a href=""><i class="bi bi-search"></i></a>
+        <a href=""><i class="bi bi-cart-fill"></i></a>
+        <button>order online</button>
+      </div>
+      <div class="hams">
+        <i class="bi bi-list"></i>
+      </div>
+    </div>
+    <div class="scroll-sec">
+      <div class="hams-list">
+        <div class="list-itms">
+          <ul style="list-style: none;">
+            <li><a href="./home.html" class="firstmenu">HOME</a></li>
+        <li><a href="#">MENU</a></li>
+        <li><a href="./about.html">ABOUT</a></li>
+        <li><a href="#">BOOK TABLE</a></li>
+        <li><a href=""><i class="bi bi-person-fill"></i></a>
+        <a href=""><i class="bi bi-search"></i></a>
+        <a href=""><i class="bi bi-cart-fill"></i></a>
+        <button>order online</button></li>
+          </ul>
+        </div>
+      </div>
+  </div>
+</div>
+  </section>
+  <section class="menu-details">
+    <div class="menu_heading">
+    <h1>Our Menu</h1>
+  </div>
+  <section class="menu-nav">
+    <div class="nav-item">
+      <input type="radio" id="all" name="option" checked>
+      <label for="all">All</label>
+    </div>
+    <div class="nav-item">
+      <input type="radio" id="burger" name="option">
+       <label for="burger">Burger</label>
+    </div>
+    <div class="nav-item">
+      <input type="radio" id="pizza" name="option">
+       <label for="pizza">Pizza</label>
+    </div>
+    <div class="nav-item">
+      <input type="radio" id="pasta" name="option">
+       <label for="pasta">Pasta</label>
+    </div>
+    <div class="nav-item">
+       <input type="radio" id="fries" name="option">
+       <label for="fries">Fries</label>
+    </div>
+  </section>
+  <section class="menu">
+    <div class="menu-content">
+      <div class="our-menu">
+      <div class="element pizza">
+      <div class="box">
+        <div class="img-box">
+        <img src="./f1.png" alt="">
+      </div>
+      <div class="txt">
+          <h5>Delicious Pizza</h5>
+          <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque </p>
+        
+        <div class="options">
+          <h5>$20</h5>
+          <i class="bi bi-cart-fill"></i>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="element burger">
+     <div class="box">
+       <div class="img-box">
+        <img src="./f2.png" alt="">
+      </div>
+      <div class="txt">
+        <h5>Delicious Burger </h5>
+        <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque </p>
+    
+        <div class="options">
+                    <h5>$15</h5>
+          <i class="bi bi-cart-fill"></i>
+        </div>
+    </div>
+     </div>
+    </div>
+    <div class="element pizza">
+     <div class="box">
+       <div class="img-box">
+        <img src="./f3.png" alt="">
+        
+      </div>
+      <div class="txt">
+          <h5>Delicious Pizza</h5>
+          <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque </p>
+        
+      <div class="options">
+                    <h5>$17</h5>
+          <i class="bi bi-cart-fill"></i>
+        </div>
+        </div>
+     </div>
+    </div>
+    <div class="element pasta">
+      <div class="box">
+        <div class="img-box">
+        <img src="./f4.png" alt="">
+      </div>
+      <div class="txt">
+        <h5>Delicious Pasta</h5>
+        <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
+      
+        <div class="options">
+                    <h5>$18</h5>
+          <i class="bi bi-cart-fill"></i>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="element fries">
+      <div class="box">
+        <div class="img-box">
+        <img src="./f5.png" alt="">
+      </div>
+      <div class="txt">
+        <h5>French Fries </h5>
+        <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
+      
+      <div class="options">
+                  <h5>$10</h5>
+        <i class="bi bi-cart-fill"></i>
+      </div>
+      </div>
+      </div>
+    </div>
+    <div class="element pizza">
+      <div class="box">
+        <div class="img-box">
+        <img src="./f6.png" alt="">
+      </div>
+      <div class="txt">
+        <h5>Delicious Pizza</h5>
+          <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque </p>
+      
+        <div class="options">
+                    <h5>$15</h5>
+          <i class="bi bi-cart-fill"></i>
+        </div>
+        </div>
+    </div>
+      </div>
+    <div class="element burger">
+      <div class="box">
+        <div class="img-box">
+        <img src="./f7.png" alt="">
+      </div>
+      <div class="txt">
+        <h5>Delicious Burger </h5>
+        <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque </p>
+      
+        <div class="options">
+                    <h5>$12</h5>
+          <i class="bi bi-cart-fill"></i>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="element burger">
+      <div class="box">
+        <div class="img-box">
+        <img src="./f8.png" alt="">
+      </div>
+      <div class="txt">
+        <h5>Delicious Burger</h5>
+        <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque </p>
+      
+        <div class="options">
+                    <h5>$14</h5>
+          <i class="bi bi-cart-fill"></i>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="element pasta">
+      <div class="box">
+        <div class="img-box">
+        <img src="./f9.png" alt="">
+      </div>
+      <div class="txt">
+        <h5>Delicious Pasta</h5>
+        <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
+      
+        <div class="options">
+                    <h5>$10</h5>
+          <i class="bi bi-cart-fill"></i>
+        </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="more-items">
+      <button><a href="#">View More</a></button>
+    </div>
+    </div>
+  </section>
+  </section>
+  <section class="contact">
+    <div class="max-lenth textalign">
+      <div class="flex social">
+      <div class="contactdetails textalign flexitem">
+        <h1>Contact us</h1>
+        <p><i class="bi bi-geo-alt-fill"></i>&nbsp;Location</p>
+        <p><i class="bi bi-telephone-fill"></i> &nbsp; call 91+ 123456780</p>
+        <p><i class="bi bi-envelope-at-fill"></i>&nbsp; vamsi123@gmail.com</p>
+      </div>
+      <div class="contactdetails textalign flexitem">
+        <h1>Feane</h1>
+        <p>Necessary, making this the first true generator <br> on the Internet. It uses a dictionary of over 200 <br>Latin words, combined with</p>
+        <div class="sociallinks "><i class="bi bi-facebook"></i><i class="bi bi-instagram"></i><i class="bi bi-linkedin"></i><i class="bi bi-twitter"></i><i class="bi bi-pinterest"></i></div>
+      </div>
+      <div class="contactdetails textalign flexitem">
+        <h1>Opening Hours</h1>
+        <p>Everyday</p>
+        <p>10Am-10Pm</p>
+      </div>
+      </div>
+      <div class="rights">
+        <p>© 2025 All Rights Reserved By VamcBoyapati</p>
+        <p>© Distributed By Vamcboyapati</p>
+      </div>
+    </div>
+  </section>
+  <script src="./all.js">
+    
+  </script>
+</body>
+</html>
