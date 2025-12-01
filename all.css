@@ -164,7 +164,6 @@
       animation-timing-function: ease;
       animation-iteration-count: infinite;
       padding-top: 10px;
-      /* padding-bottom: 100px; */
     }
     @keyframes sliding {
       0%{transform: translateX(0%);}
@@ -688,9 +687,7 @@
     .home-bg{
       min-height: 95vh;
     }
-    .slider{
-      align-items: baseline;
-    }
+    
   }
   @media (min-width:993px){
     .hams{
