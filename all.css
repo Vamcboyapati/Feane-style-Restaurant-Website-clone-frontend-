@@ -26,10 +26,10 @@
       padding: 20px 0px;
     }
     h1{
-      font-family: "dancing script", cursive;
+      font-family: "Dancing Script", cursive;
     }
     .home-header>h1{
-      font-family: "dancing script", cursive;
+      font-family: "Dancing Script", cursive;
       flex-grow: 1;
     }
     .nav-sec{
@@ -97,7 +97,7 @@
     .hams-list button:hover{
       background-color: rgb(121, 91, 3);
     }
-    .home-header a:hover{
+    .home-header a:hover,.list-itms a:hover{
       color: #ffc107;
     }
     .active{
@@ -693,6 +693,9 @@
     .hams{
       display: none;
     }
+    .hams-list.active{
+      display: none;
+    }
   }
   
    @media (max-width:993px) {
@@ -702,6 +705,7 @@
     .end-sec{
       display: none;
     }
+    
   }
 
  

@@ -10,18 +10,6 @@ hams.addEventListener("click", () => {
        : '<i class="bi bi-list"></i>';
 });
 
-let links = document.querySelectorAll(".hams-list a");
-let firstfour = [...links].slice(0, 4);
-let navlinks=document.querySelectorAll(".nav-sec a")
-
-firstfour.forEach(link => {
-  link.addEventListener("click", function() {
-
-    firstfour.forEach(l => l.classList.remove("activate"));
-
-    this.classList.add("activate");
-  });
-});
 let all=document.getElementById("all")
 window.addEventListener("load", (event) => {
   all.checked=true;
@@ -49,4 +37,11 @@ function filterItems(category) {
     }
   });
 }
+
+let navs=document.querySelectorAll(".home-bg a")
+navs.forEach(a=>{
+  if (a.innerHTML==document.title){
+    a.style.color=" #ffc107"
+  }
+})
 
